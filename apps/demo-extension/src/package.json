@@ -1,0 +1,24 @@
+{
+  "name": "demo-extension",
+  "displayName": "demo-extension",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:demo-extension.helloWorld"
+  ],
+  "main": "../../../dist/apps/demo-extension/main.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "demo-extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  }
+}
